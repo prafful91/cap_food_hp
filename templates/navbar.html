@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Capstone Project Food 101{% endblock %}</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Capstone Project Food 101</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Interim_report">Interim Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict_classification">Classification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict_object">Object Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Final_report">Final Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/prafful91">
+                            <i class="material-icons">github</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

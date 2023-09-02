@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Uploaded Images</h1>
+
+    <div class="image-container text-center">
+        <h2>Image with Bounding Box</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="{{ image1 }}" alt="Image 1" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

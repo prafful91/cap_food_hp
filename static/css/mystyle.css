@@ -1,0 +1,8 @@
+.nav-link {
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    background-color: red;
+    border-radius: 15px;
+}
