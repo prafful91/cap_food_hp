@@ -29,7 +29,7 @@ templates = Jinja2Templates(directory="templates")
 
 #Model Path
 
-model_path = 'runs/detect/train/weights/best.pt'
+model_path = 'models/best.pt'
 
 
 
